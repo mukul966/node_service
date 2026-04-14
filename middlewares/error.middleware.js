@@ -1,4 +1,6 @@
 module.exports = (err, req, res, next) => {
+      console.log('i am here');
+      
 	console.error(err);
 
 	res.status(500).json({
