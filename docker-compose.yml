@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  node_service:
+    build: .
+    container_name: node_app
+    ports:
+      - "7002:7001"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: npm run dev
